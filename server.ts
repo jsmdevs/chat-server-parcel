@@ -134,7 +134,7 @@ function main() {
 };
 
 app.use(express.static("./dist"));
-app.get('/{*splat}', (req:any, res:any) => {
+app.get('/{*splat}', (_req:any, res:any) => {
     res.sendFile(`${__dirname}/dist/index.html`);
 })
 
