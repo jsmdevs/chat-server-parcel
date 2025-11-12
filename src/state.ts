@@ -2,7 +2,9 @@ import { db as rtdb, ref, onValue } from './rtdb.ts';
 import map from "lodash/map"
 
 
-const API_BASE_URL = "http://localhost:3000";
+const port = process.env.PORT || 3000;
+
+const API_BASE_URL = `http://localhost:${port}`;
 // const API_BASE_URL = "https://server-chat-production-811b.up.railway.app";
 
 export const state = {
