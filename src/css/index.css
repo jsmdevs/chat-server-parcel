@@ -1,0 +1,31 @@
+@import "../pages/welcome/welcome.css";
+@import "./variables.css";
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.btn{
+    background-color: var(--color-btn);
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background .1s;
+}
+
+.btn:active{
+    background-color: #84a6d4;
+}
+
+.input{
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: .8rem;
+    box-sizing: border-box;
+}
+
+.root{
+    height: calc(100dvh - 71px);
+    font-family: "Roboto", sans-serif;
+}

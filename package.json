@@ -1,0 +1,33 @@
+{
+  "name": "parcel-vanilla-starter",
+  "private": true,
+  "version": "0.0.0",
+  "source": "./index.html",
+  "scripts": {
+    "dev:back": "nodemon --watch ./server.ts --exec tsx ./server.ts",
+    "dev:front": "parcel",
+    "build:front": "parcel build",
+    "build:back": "tsc",
+    "build": "npm run build:front && npm run build:back",
+    "start": "node dist_server/server.js"
+  },
+  "dependencies": {
+    "@vaadin/router": "^2.0.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase": "^12.3.0",
+    "firebase-admin": "^13.6.0",
+    "lodash": "^4.17.21",
+    "nanoid": "^5.1.6",
+    "parcel": "^2.14.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "dotenv": "^17.2.3",
+    "nodemon": "^3.1.10",
+    "process": "^0.11.10",
+    "typescript": "~5.8.3",
+    "vite": "^7.1.6"
+  }
+}
